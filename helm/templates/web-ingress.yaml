@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+  name: emojivoto
+  namespace: {{ .Values.namespace }}
+spec:
+  ingressClassName: cilium
+  rules:
+  - host: emojivoto.meilink.net
+    http:
+      paths:
+      - backend:
+          service:
+            name: web-svc
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
+  tls:
+  - hosts:
+    - emojivoto.meilink.net
+    secretName: meilinknet
