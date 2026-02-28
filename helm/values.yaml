@@ -1,9 +1,9 @@
 namespace: emojivoto
 
 image:
-  web: ghcr.io/buoyantio/emojivoto-web:v11
-  emoji: ghcr.io/buoyantio/emojivoto-emoji-svc:v11
-  voting: ghcr.io/buoyantio/emojivoto-voting-svc:v11
-  bot: ghcr.io/buoyantio/emojivoto-web:v11
+  web: ghcr.io/buoyantio/emojivoto-web
+  emoji: ghcr.io/buoyantio/emojivoto-emoji-svc
+  voting: ghcr.io/buoyantio/emojivoto-voting-svc
+  bot: ghcr.io/buoyantio/emojivoto-web
 
 tag: v12

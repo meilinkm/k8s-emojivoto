@@ -29,7 +29,7 @@ spec:
           value: voting-svc.emojivoto:8080
         - name: INDEX_BUNDLE
           value: dist/index_bundle.js
-        image: {{ .Values.image.web }}
+        image: "{{ .Values.image.web }}:{{ .Values.tag }}"
         name: web-svc
         ports:
         - containerPort: 8080

@@ -26,7 +26,7 @@ spec:
           value: "8080"
         - name: PROM_PORT
           value: "8801"
-        image: {{ .Values.image.voting }}
+        image: "{{ .Values.image.voting }}:{{ .Values.tag }}"
         ports:
         - containerPort: 8080
           name: grpc

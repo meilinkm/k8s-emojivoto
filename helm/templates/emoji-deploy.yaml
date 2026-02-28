@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: emoji-svc
-        image: {{ .Values.image.emoji }}
+        image: "{{ .Values.image.emoji }}:{{ .Values.tag }}"
         ports:
         - containerPort: 8080
           name: grpc
