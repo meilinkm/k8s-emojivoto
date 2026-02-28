@@ -5,3 +5,5 @@ image:
   emoji: ghcr.io/buoyantio/emojivoto-emoji-svc:v11
   voting: ghcr.io/buoyantio/emojivoto-voting-svc:v11
   bot: ghcr.io/buoyantio/emojivoto-web:v11
+
+tag: v12
